@@ -9,38 +9,10 @@
     <script src="https://cdn.rawgit.com/joelpurra/emulatetab/master/src/emulatetab.joelpurra.js" type="text/javascript"></script>
     <script src="~/Scripts/plusastab.joelpurra.js"></script>
     @*<script src="http://cdn.rawgit.com/joelpurra/plusastab/master/src/plusastab.joelpurra.js"></script>*@
-    <script>
-        //<![CDATA[
-
-        JoelPurra.PlusAsTab.plusAsTab($("#form1 textarea, #form1 button"), false);
-
-        JoelPurra.PlusAsTab.plusAsTab($("#form1 :input"));
-
-        JoelPurra.PlusAsTab.setOptions({
-            // Use enter instead of plus
-            // Number 13 found through demo at
-            // http://api.jquery.com/event.which/
-            key: 13
-        });
-
-        $("form")
-                .submit(simulateSubmitting);
-
-        function simulateSubmitting(event) {
-            event.preventDefault();
-
-            if (confirm("Simulating that the form has been submitted.\n\nWould you like to reload the page?")) {
-                location.reload();
-            }
-
-            return false;
-        }
-        //]]>
-    </script>
+    <script src="~/Scripts/ViewScripts/byPlusTab.js"></script>
 }
 
 <h2>@ViewBag.Title</h2>
-
 
 <h5>Reference: <a href="http://joelpurra.github.io/plusastab/example/enter-as-tab.html" target="_blank">http://joelpurra.github.io/plusastab/example/enter-as-tab.html</a> </h5>
 

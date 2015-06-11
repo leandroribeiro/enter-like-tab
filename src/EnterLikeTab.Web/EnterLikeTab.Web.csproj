@@ -158,6 +158,10 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\plusastab.joelpurra.js" />
+    <Content Include="Scripts\sane_enter_key.js" />
+    <Content Include="Scripts\ViewScripts\byJavaScript.js" />
+    <Content Include="Scripts\ViewScripts\byJQuery.js" />
+    <Content Include="Scripts\ViewScripts\byPlusTab.js" />
     <Content Include="tile-wide.png" />
     <Content Include="tile.png" />
     <Content Include="Web.config" />
@@ -175,6 +179,7 @@
     <Content Include="Views\Shared\_Form.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\ByPlusTab.cshtml" />
+    <Content Include="Views\Home\BySaneEnter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

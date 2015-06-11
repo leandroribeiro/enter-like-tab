@@ -1,0 +1,16 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "By Sane Enter (GitHub)";
+}
+
+@section javascript
+{
+    <script src="~/Scripts/sane_enter_key.js" type="text/javascript"></script>
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h5>Reference: <a href="https://github.com/mikbe/SaneEnterKey" target="_blank">https://github.com/mikbe/SaneEnterKey</a> </h5>
+
+@Html.Partial("_Form")

@@ -14,19 +14,19 @@ namespace EnterLikeTab.Web
             //    url: "{conte}/{controller}/{action}",
             //    defaults: new { controller = "Home",action ="byjquery" }
             //);
-            
+
             routes.MapRoute(
                 name: "ByJavaScript",
                 url: "byjavascript",
                 defaults: new { controller = "Home", action = "ByJavaScript" }
-            ); 
-            
+            );
+
             routes.MapRoute(
                 name: "ByJQuery",
                 url: "byjquery",
                 defaults: new { controller = "Home", action = "ByJQuery" }
             );
-            
+
             routes.MapRoute(
                 name: "ByPlusTab",
                 url: "byplustab",
@@ -34,12 +34,18 @@ namespace EnterLikeTab.Web
             );
 
             routes.MapRoute(
+    name: "BySaneEnter",
+    url: "bysaneenter",
+    defaults: new { controller = "Home", action = "BySaneEnter" }
+);
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "ByJQuery", id = UrlParameter.Optional }
             );
 
-            
+
         }
     }
 }
