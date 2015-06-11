@@ -1,0 +1,46 @@
+﻿@*<form data-plus-as-tab="true">*@
+<form id="form1">
+    <fieldset>
+        <legend>Demo form fields</legend>
+        <input type="text" value="Enter skips to the next field" autofocus="autofocus" />
+        <input type="number" step="1" value="999" />
+        <ol>
+            <li>
+                <label>
+                    <input type="radio" name="radio-group-1" checked="checked" />
+                    Radio 1
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="radio-group-1" />
+                    Radio 2
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="radio-group-1" />
+                    Radio 3
+                </label>
+            </li>
+        </ol>
+        <input type="text" value="You can even shift-enter to go back" />
+
+        <!-- Exclude this textarea -->
+        <textarea>Enter works as usual to make new lines in the textarea. Use tab to navigate out of it.</textarea>
+        @*<textarea data-plus-as-tab="false">Enter works as usual to make new lines in the textarea. Use tab to navigate out of it.</textarea>*@
+
+        <input type="text" value="Enter skips to the next field" />
+        <select>
+            <option>Enter skips this drop-down too</option>
+            <option>Another option</option>
+            <option>You can still use enter as usual when the drop-down is activated</option>
+            <option>Another option</option>
+        </select>
+        <!-- Exclude this submit button -->
+        @*<button type="submit" data-plus-as-tab="false">
+            Enter works as usual to submit on this button</button>*@
+        <button type="submit">Enter works as usual to submit on this button</button>
+        <input type="text" value="You can tab to go here" />
+    </fieldset>
+</form>
